@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 class Operators extends React.Component {
   constructor(props) {
@@ -21,6 +23,11 @@ class Operators extends React.Component {
         </div>
     );
   }
+}
+
+Operators.propTypes = {
+  next: PropTypes.string,
+  handleClick: PropTypes.func.isRequired
 }
 
 export default Operators;
